@@ -8,12 +8,23 @@ light gray #757575*/
   border: 1px dashed #000ffe;
 }
 
-/*mobile layout*/
+/*mobile layout + default style*/
 body{
   margin: 0;
 }
 h1{
   margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+.small-img{
+  background-color: black;
+  height: 100%;
+  width: 25%;
+  float: left;
+  display: inline;
 }
 .container{
   border-color: magenta;
@@ -21,7 +32,6 @@ h1{
 }
 .grid{
   border-color: purple;
-
 }
 .big-img{
   width: 100%;
@@ -37,10 +47,9 @@ h1{
   height: 10vh;
   margin-bottom: 1.5vh;
   background-color: #77ffd4;
+  padding: 2%;
 }
-.small-img{
-  height: 40%;
-}
+
 /*tablet view*/
 @media screen and (min-width: 600px) {
   body {
@@ -60,6 +69,9 @@ h1{
     display: inline-block;
     height: 13.35vh;
   }
+  .small-img{
+    height: 40%;
+  }
   .grid .small-card:nth-child(2n+1){
     margin-left: 1%;
   }
@@ -72,7 +84,6 @@ h1{
   body {
     background-color: palevioletred;
   }
-
   .grid{
     background-color: grey;
     height: 95vh;
@@ -85,6 +96,9 @@ h1{
   }
   .grid .big-img:nth-child(even){
     float: right;
+  }
+  .grid .big-img:nth-child(odd){
+    margin-right: 1.5vw;
   }
   .small-card{
     width: 21%;
