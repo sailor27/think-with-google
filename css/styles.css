@@ -21,6 +21,7 @@ h1{
 }
 .grid{
   border-color: purple;
+
 }
 .big-img{
   width: 100%;
@@ -35,32 +36,63 @@ h1{
   width: 100%;
   height: 10vh;
   margin-bottom: 1.5vh;
-  background-color: white;
+  background-color: #77ffd4;
 }
+.small-img{
+  height: 40%;
+}
+/*tablet view*/
 @media screen and (min-width: 600px) {
   body {
     background-color: orange;
   }
-
   .container{
     width: 100%;
   }
-
   .grid .small-card{
-    background-color: pink;
-    margin: auto .68vw 1vh .72vw;
+    margin: auto 0 1vh 0;
   }
-
   .grid div:first-of-type{
     margin-bottom: 1vh;
   }
   .small-card{
-    width: 48%;
+    width: 49%;
     display: inline-block;
     height: 13.35vh;
   }
-
+  .grid .small-card:nth-child(2n+1){
+    margin-left: 1%;
+  }
   .big-img{
     height: 30vh;
+  }
+}
+/*desktop view*/
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: palevioletred;
+  }
+
+  .grid{
+    background-color: grey;
+    height: 95vh;
+  }
+  .big-img{
+    padding: 0;
+    width: 55%;
+    height: 45vh;
+    float: left;
+  }
+  .grid .big-img:nth-child(even){
+    float: right;
+  }
+  .small-card{
+    width: 21%;
+    height: 45vh;
+    padding: 0;
+  }
+  .grid .small-card:nth-child(even){
+    background-color: blue;
+    float: left;
   }
 }
