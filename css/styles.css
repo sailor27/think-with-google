@@ -1,0 +1,41 @@
+/*colors:
+light gray #757575*/
+
+
+/*wireframing:*/
+*:not(body):not(html){
+  box-sizing: border-box;
+  border: 1px dashed #000ffe;
+
+}
+
+body{
+  margin: 0;
+}
+h1{
+  height: 3vh;
+  margin-bottom: 0;
+  padding: 1vh 1vw;
+  margin: auto 5vw 0 5vw;
+}
+.container{
+  border-color: purple;
+  padding: 0 5vw;
+}
+
+.big-img{
+  width: 90vw;
+  height: 22.5vh;
+  background-color: lightblue;
+}
+
+.container div:first-of-type{
+  margin-bottom: 2vh;
+}
+
+.small-card{
+  width: 90vw;
+  height: 10vh;
+  margin-bottom: 2vh;
+  background-color: white;
+}
