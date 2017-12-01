@@ -1,14 +1,14 @@
 /*colors:
 light gray #757575*/
 
-
 /*wireframing:*/
+
 *:not(body):not(html){
   box-sizing: border-box;
   border: 1px dashed #000ffe;
-
 }
 
+/*mobile layout*/
 body{
   margin: 0;
 }
@@ -22,20 +22,22 @@ h1{
   border-color: purple;
   padding: 0 5vw;
 }
-
 .big-img{
   width: 90vw;
   height: 22.5vh;
-  background-color: lightblue;
 }
-
+/*first big image margin*/
 .container div:first-of-type{
   margin-bottom: 2vh;
 }
-
 .small-card{
   width: 90vw;
   height: 10vh;
   margin-bottom: 2vh;
   background-color: white;
+}
+@media screen and (min-width: 600px) {
+  body {
+    background-color: orange;
+  }
 }
