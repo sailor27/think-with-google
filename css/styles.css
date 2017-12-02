@@ -93,11 +93,17 @@ h4{
 }
 .big-img-text{
   width: 85%;
+  font-size: 1.1em;
+  text-shadow: 1px 1px #757575;
   color: #fff;
   position: absolute;
-  top: 70%;
+  top: 55%;
   left: 5%;
 }
+.big-img-text p{
+  margin-top: 20px;
+}
+
 /*first big image margin*/
 #friday{
   margin-bottom: 2vh;
