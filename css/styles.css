@@ -5,7 +5,7 @@ light gray #757575*/
 
 *:not(body):not(html){
   box-sizing: border-box;
-  /*border: 1px dashed #000ffe;*/
+  border: 1px dashed #000ffe;
 }
 
 /*mobile layout + default style*/
@@ -29,27 +29,33 @@ h4{
 #football{
   background: url("../img/football.jpg");
   background-size: cover;
+  background-position: center center;
 }
 #cart{
   background: url("../img/cartmobile.jpg")no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 #circle{
   background: url("../img/circledash.jpg")no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 #yoplait {
   background: url("../img/yoplait.jpg")no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 #friday{
   background: url("../img/friday.jpg") no-repeat;
   background-size: cover;
+  background-position: center center;
 
 }
 #holiday{
   background: url("../img/holiday.jpg")no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 
 .small-img{
@@ -57,7 +63,7 @@ h4{
   width: 25%;
   float: left;
   display: inline;
-  position: relative;
+
 }
 .card-text{
   width: 70%;
@@ -83,8 +89,18 @@ h4{
 .big-img{
   width: 100%;
   height: 22.5vh;
-  background-color: burlywood;
+  position: relative;
 }
+
+.big-img-text{
+  width: 85%;
+  color: #fff;
+  position: absolute;
+  top: 70%;
+  left: 5%;
+}
+
+
 /*first big image margin*/
 .grid div:first-of-type{
   margin-bottom: 2vh;
