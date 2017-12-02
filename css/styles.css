@@ -8,11 +8,11 @@ body{
   background-color: #f5f5f5;
   font-family: 'Roboto', sans-serif;
   color: #636363;
-
 }
 h2{
   margin: 0 auto 2vh auto;
-  font-weight: normal;
+  font-size: 2vw;
+  font-weight: 300;
   display: none;
 }
 img {
@@ -67,6 +67,7 @@ h4{
   float:right;
   margin: 0;
   position: relative;
+  padding-top:1vh;
 }
 .card-text p{
   margin: 2.5% auto;
@@ -94,15 +95,16 @@ h4{
 }
 .big-img-text{
   width: 85%;
+  font-weight: 300;
   font-size: 1.1em;
-  text-shadow: 1px 1px #757575;
+  text-shadow: 1px 1px #7e7575;
   color: #fff;
   position: absolute;
   top: 55%;
   left: 5%;
 }
 .big-img-text p{
-  margin-top: 20px;
+  margin-top: 2vh;
 }
 #friday{
   margin-bottom: 2vh;
@@ -123,13 +125,11 @@ h4{
   .small-img{
     width: 100%;
     height: 60%;
-    margin: 0;
-    padding: 0;
   }
   .card-text{
-    margin: 0;
     width:100%;
     height:40%;
+    padding-top: 1.2vh;
   }
   .card-text h4{
     padding:2% 2.5%;
@@ -145,7 +145,7 @@ h4{
     padding: 0;
   }
   .card-text p{
-    top: 65%;
+    top: 68%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
@@ -155,6 +155,9 @@ h4{
   }
   .big-img{
     height: 21vh;
+  }
+  .big-img-text{
+    font-size: 1.2em;
   }
 }
 /*desktop view*/
@@ -166,7 +169,6 @@ h4{
     height: 95vh;
   }
   .big-img{
-    padding: 0;
     width: 55%;
     height: 45vh;
     float: left;
@@ -181,11 +183,19 @@ h4{
     width: 21%;
     height: 45vh;
   }
-  .card-text p{
-    padding-top:20%;
-    margin: 10% 5%;
-  }
   .grid .small-card:nth-child(even){
     float: left;
+  }
+  .card-text p {
+    top:83%;
+  }
+  .card-text{
+    padding-top: 3vh;
+  }
+  .big-img-text{
+    top:67%;
+  }
+  .big-img-text p{
+    margin-top: 3.5vh;
   }
 }
