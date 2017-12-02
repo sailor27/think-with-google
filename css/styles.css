@@ -1,13 +1,14 @@
 *:not(body):not(html){
   box-sizing: border-box;
-  /*border: 1px dashed #000;*/
 }
+
 /*mobile layout + default style*/
 body{
   margin: 0;
   background-color: #f5f5f5;
   font-family: 'Roboto', sans-serif;
   color: #636363;
+  min-width: 350px;
 }
 h2{
   margin: 0 auto 2vh auto;
@@ -59,7 +60,6 @@ h4{
   height: 100%;
   width: 25%;
   float: left;
-  display: inline;
 }
 .card-text{
   width: 70%;
@@ -104,14 +104,14 @@ h4{
   left: 5%;
 }
 .big-img-text p{
-  margin-top: 2vh;
+  margin-top: 1.3vh;
 }
 #friday{
   margin-bottom: 2vh;
 }
 .small-card{
   width: 100%;
-  height: 10vh;
+  height: 12.5vh;
   margin-bottom: 1.5vh;
   padding: 1%;
   background-color: #ffff;
@@ -159,6 +159,8 @@ h4{
   .big-img-text{
     font-size: 1.2em;
   }
+  .big-img-text p{
+    margin-top: 1.1vh;
 }
 /*desktop view*/
 @media screen and (min-width: 1200px) {
