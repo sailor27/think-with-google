@@ -2,10 +2,8 @@
 light gray #757575*/
 
 /*wireframing:*/
-
 *:not(body):not(html){
   box-sizing: border-box;
-  /*border: 1px dashed #000ffe;*/
 }
 /*mobile layout + default style*/
 body{
@@ -52,7 +50,6 @@ h4{
   background: url("../img/friday.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
-
 }
 #holiday{
   background: url("../img/holiday.jpg")no-repeat;
@@ -90,6 +87,7 @@ h4{
   width: 100%;
   height: 22.5vh;
   position: relative;
+  box-shadow: 3px 3px 2px #757575;
 }
 .big-img-text{
   width: 85%;
@@ -103,8 +101,6 @@ h4{
 .big-img-text p{
   margin-top: 20px;
 }
-
-/*first big image margin*/
 #friday{
   margin-bottom: 2vh;
 }
@@ -114,6 +110,7 @@ h4{
   margin-bottom: 1.5vh;
   padding: 1%;
   background-color: #ffff;
+  box-shadow: 2.5px 2.5px 1.5px #757575;
 }
 /*tablet view*/
 @media screen and (min-width: 600px) {
@@ -132,7 +129,6 @@ h4{
     height:40%;
     padding:2% 7%;
   }
-
   #friday{
     margin-bottom: 1vh;
   }
